@@ -1,8 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[你好，世界]]></title>
-    <url>%2F2018%2F03%2F13%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[我的第一篇文章]]></content>
-  </entry>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[body structure aware deep crowd counting]]></title>
+      <url>/2018/07/07/body-structure-aware-deep-crowd-counting/</url>
+      <content type="html"><![CDATA[<h1 id="���"><a href="#���" class="headerlink" title="���"></a>���</h1><ul>
+<li>�������ƣ���Body Structure Aware Deep Crowd Counting��</li>
+<li>CNN����<ul>
+<li>����CNN</li>
+<li>�����ĸ�֪</li>
+<li>������ģ��</li>
+</ul>
+</li>
+<li>�������ݵķ���<ul>
+<li>��������ͼ��</li>
+</ul>
+</li>
+</ul>
+<h1 id="�����ջ�"><a href="#�����ջ�" class="headerlink" title="�����ջ�"></a>�����ջ�</h1><ul>
+<li>ͨ�������˵ľ�����״����������Ҷ�����еƵƶ���Ⱥ�����Ļ���;</li>
+<li>��û��perspective map��������ֶ����һ�ţ�Ȼ��Ӧ��ȫ������������ѡ�����ݼ���һ����׼��</li>
+</ul>
+<h1 id="�۵�����"><a href="#�۵�����" class="headerlink" title="�۵�����"></a>�۵�����</h1><p>Ӱ������ͳ�Ƶ��������أ����ˡ�ͷ����������Ϣ��context structure����2016 CVPR, 2017 CVPR ֻ�������������أ�����۵㲻����ͬ��������Ӧ�û��Զ���ȡ��������Ϣ�ģ���û�м�����������Ϣ������ͨ������ָ�Ĺ۵���ʵ������ͳ�ơ������ֳ�������ģ�ͣ���һ����Ϊ���岿��ͼ�������������Ĳ��֣���ͼ1���ò�ͬ����ɫ��ǳ��˵�ͷ���������ȣ����нӲ��õ���[2013 iccv Pedestrain parsing via deep decompositional network]��������磬��ѵ���õĲ������ڶ�����Ϊ�ṹ��Ⱥ�ܶ�ͼ���������岿��ͼ�����ĸ������˵���ϸ��״�������ṹ������Ⱥ�ܶ�ͼ��</p>
+<p><img src="/images/201807072359.png" border="0" class="" width="372" height="293"></p>
+<p>���Ĳ��ö�����ѧϰ�������Ϊ������������1��2��������������ָ�ģ�� 3.������Ⱥ����</p>
+<h1 id="��ع���"><a href="#��ع���" class="headerlink" title="��ع���"></a>��ع���</h1><ol>
+<li><p>��Ⱥ����</p>
+<ul>
+<li>��Ϊ����: ���ڼ���,����ȫ�ֵݹ�,�����ܶ�������</li>
+</ul>
+</li>
+<li><p>�����������</p>
+</li>
+<li><p>���������</p>
+<ul>
+<li>Ӧ��FCN ��ʵ�ֳ�������ģ�͡���ȥ���˺���� ȫ�������� ����conv2 1*1 ��</li>
+</ul>
+</li>
+</ol>
+<h1 id="����"><a href="#����" class="headerlink" title="����"></a>����</h1><ol>
+<li>���ⶨ��</li>
+</ol>
+<p><img src="/images/201807080006.png" border="0" class="" width="372" height="293"></p>
+<ol>
+<li>���岿��ͼ</li>
+</ol>
+<p>����Ӧ������Ұͼ�����Ǻܶ����ݼ���û�����ѡ��ģ���Ҳ��������ƪ���ĵ�Ӧ�ó�������M(p) ��ʾ��λ��P�� Ҫ�ö��ٸ����ر�ʾ1�ס� һ���˵����ϽǺ����½������������£�</p>
+<p><img src="/images/201807080008.png" border="0" class="" width="372" height="293"></p>
+<p>�����ļ����˵ĸ�Լ2���ڣ���1���ڣ�������˼����Ϊʲô��ô���ã���Ȼ��ʵ��������</p>
+<p><img src="/images/201807080009.png" border="0" class="" width="372" height="293"></p>
+<ol>
+<li>�ṹ���ܶ�ͼ</li>
+</ol>
+<p>�ṹ�ܶ�ͼ����ͬʱ�����ܶȷֲ������˵���״��������״����ܺ��˽���˵ƺ���Ҷ�����⣩��<br>�ṹ�����ܶ�ͼ��</p>
+<p><img src="/images/201807080010.png" border="0" class="" width="372" height="293"></p>
+<ol>
+<li>��������Ⱥ�������</li>
+</ol>
+<p><img src="/images/201807080012.png" border="0" class="" width="372" height="293"></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[你好，世界]]></title>
+      <url>/2018/03/13/hello-world/</url>
+      <content type="html"><![CDATA[<p>我的第一篇文章</p>
+]]></content>
+      
+        
+    </entry>
+    
+  
+  
 </search>
