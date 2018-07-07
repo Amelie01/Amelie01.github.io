@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="��� �������ƣ���Body Structure Aware Deep Crowd Counting�� CNN���� ����CNN �����ĸ�֪ ������ģ��   �������ݵķ��� ��������ͼ��    �����ջ� ͨ�������˵ľ�����״����������Ҷ�����еƵƶ���Ⱥ�����Ļ���; ��û��perspective ma">
+<meta name="description" content="简介 论文名称：《Body Structure Aware Deep Crowd Counting》 CNN分类 基础CNN 上下文感知 多任务模型   输入数据的分类 基于完整图像    个人收获 通过引入人的具体形状来避免了树叶，还有灯灯对人群计数的混淆; 在没有perspective map的情况下手动标记一张，然后应用全部，这是论文选择数据集的一个标准；  观点引入影响人流统计的三个因素：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="body structure aware deep crowd counting">
 <meta property="og:url" content="http://dllog.cn/2018/07/07/body-structure-aware-deep-crowd-counting/index.html">
 <meta property="og:site_name" content="MissDong&#39;s Logs">
-<meta property="og:description" content="��� �������ƣ���Body Structure Aware Deep Crowd Counting�� CNN���� ����CNN �����ĸ�֪ ������ģ��   �������ݵķ��� ��������ͼ��    �����ջ� ͨ�������˵ľ�����״����������Ҷ�����еƵƶ���Ⱥ�����Ļ���; ��û��perspective ma">
+<meta property="og:description" content="简介 论文名称：《Body Structure Aware Deep Crowd Counting》 CNN分类 基础CNN 上下文感知 多任务模型   输入数据的分类 基于完整图像    个人收获 通过引入人的具体形状来避免了树叶，还有灯灯对人群计数的混淆; 在没有perspective map的情况下手动标记一张，然后应用全部，这是论文选择数据集的一个标准；  观点引入影响人流统计的三个因素：">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://dllog.cn/images/201807072359.png">
 <meta property="og:image" content="http://dllog.cn/images/201807080006.png">
@@ -92,10 +92,10 @@
 <meta property="og:image" content="http://dllog.cn/images/201807080009.png">
 <meta property="og:image" content="http://dllog.cn/images/201807080010.png">
 <meta property="og:image" content="http://dllog.cn/images/201807080012.png">
-<meta property="og:updated_time" content="2018-07-07T16:12:22.562Z">
+<meta property="og:updated_time" content="2018-07-07T16:18:54.044Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="body structure aware deep crowd counting">
-<meta name="twitter:description" content="��� �������ƣ���Body Structure Aware Deep Crowd Counting�� CNN���� ����CNN �����ĸ�֪ ������ģ��   �������ݵķ��� ��������ͼ��    �����ջ� ͨ�������˵ľ�����״����������Ҷ�����еƵƶ���Ⱥ�����Ļ���; ��û��perspective ma">
+<meta name="twitter:description" content="简介 论文名称：《Body Structure Aware Deep Crowd Counting》 CNN分类 基础CNN 上下文感知 多任务模型   输入数据的分类 基于完整图像    个人收获 通过引入人的具体形状来避免了树叶，还有灯灯对人群计数的混淆; 在没有perspective map的情况下手动标记一张，然后应用全部，这是论文选择数据集的一个标准；  观点引入影响人流统计的三个因素：">
 <meta name="twitter:image" content="http://dllog.cn/images/201807072359.png">
 
 
@@ -396,58 +396,58 @@
       
 
       
-        <h1 id="���"><a href="#���" class="headerlink" title="���"></a>���</h1><ul>
-<li>�������ƣ���Body Structure Aware Deep Crowd Counting��</li>
-<li>CNN����<ul>
-<li>����CNN</li>
-<li>�����ĸ�֪</li>
-<li>������ģ��</li>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul>
+<li>论文名称：《Body Structure Aware Deep Crowd Counting》</li>
+<li>CNN分类<ul>
+<li>基础CNN</li>
+<li>上下文感知</li>
+<li>多任务模型</li>
 </ul>
 </li>
-<li>�������ݵķ���<ul>
-<li>��������ͼ��</li>
+<li>输入数据的分类<ul>
+<li>基于完整图像</li>
 </ul>
 </li>
 </ul>
-<h1 id="�����ջ�"><a href="#�����ջ�" class="headerlink" title="�����ջ�"></a>�����ջ�</h1><ul>
-<li>ͨ�������˵ľ�����״����������Ҷ�����еƵƶ���Ⱥ�����Ļ���;</li>
-<li>��û��perspective map��������ֶ����һ�ţ�Ȼ��Ӧ��ȫ������������ѡ�����ݼ���һ����׼��</li>
+<h1 id="个人收获"><a href="#个人收获" class="headerlink" title="个人收获"></a>个人收获</h1><ul>
+<li>通过引入人的具体形状来避免了树叶，还有灯灯对人群计数的混淆;</li>
+<li>在没有perspective map的情况下手动标记一张，然后应用全部，这是论文选择数据集的一个标准；</li>
 </ul>
-<h1 id="�۵�����"><a href="#�۵�����" class="headerlink" title="�۵�����"></a>�۵�����</h1><p>Ӱ������ͳ�Ƶ��������أ����ˡ�ͷ����������Ϣ��context structure����2016 CVPR, 2017 CVPR ֻ�������������أ�����۵㲻����ͬ��������Ӧ�û��Զ���ȡ��������Ϣ�ģ���û�м�����������Ϣ������ͨ������ָ�Ĺ۵���ʵ������ͳ�ơ������ֳ�������ģ�ͣ���һ����Ϊ���岿��ͼ�������������Ĳ��֣���ͼ1���ò�ͬ����ɫ��ǳ��˵�ͷ���������ȣ����нӲ��õ���[2013 iccv Pedestrain parsing via deep decompositional network]��������磬��ѵ���õĲ������ڶ�����Ϊ�ṹ��Ⱥ�ܶ�ͼ���������岿��ͼ�����ĸ������˵���ϸ��״�������ṹ������Ⱥ�ܶ�ͼ��</p>
+<h1 id="观点引入"><a href="#观点引入" class="headerlink" title="观点引入"></a>观点引入</h1><p>影响人流统计的三个因素：行人、头、上下文信息（context structure）。2016 CVPR, 2017 CVPR 只考虑了行人因素（这个观点不能赞同，神经网络应该会自动提取上下文信息的），没有加入上下文信息。文中通过语义分割的观点来实现人流统计。两部分场景解析模型：第一部分为身体部分图，用来标记身体的部分，如图1，用不同的颜色标记出人的头，上身，和腿，文中接采用的是[2013 iccv Pedestrain parsing via deep decompositional network]提出的网络，及训练好的参数。第二部分为结构人群密度图。利用身体部分图产生的各个行人的详细形状，构建结构化的人群密度图。</p>
 <p><img src="/images/201807072359.png" border="0" class="" width="372" height="293"></p>
-<p>���Ĳ��ö�����ѧϰ�������Ϊ������������1��2��������������ָ�ģ�� 3.������Ⱥ����</p>
-<h1 id="��ع���"><a href="#��ع���" class="headerlink" title="��ع���"></a>��ع���</h1><ol>
-<li><p>��Ⱥ����</p>
+<p>本文采用多任务学习，具体分为以下三个任务：1，2如上描述的语义分割模型 3.评估人群数。</p>
+<h1 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h1><ol>
+<li><p>人群计数</p>
 <ul>
-<li>��Ϊ����: ���ڼ���,����ȫ�ֵݹ�,�����ܶ�������</li>
+<li>分为三类: 基于检测的,基于全局递归,基于密度评估的</li>
 </ul>
 </li>
-<li><p>�����������</p>
+<li><p>行人语义分析</p>
 </li>
-<li><p>���������</p>
+<li><p>卷积神经网络</p>
 <ul>
-<li>Ӧ��FCN ��ʵ�ֳ�������ģ�͡���ȥ���˺���� ȫ�������� ����conv2 1*1 ��</li>
+<li>应用FCN 来实现场景解析模型。（去掉了后面的 全连接网络 改用conv2 1*1 ）</li>
 </ul>
 </li>
 </ol>
-<h1 id="����"><a href="#����" class="headerlink" title="����"></a>����</h1><ol>
-<li>���ⶨ��</li>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol>
+<li>问题定义</li>
 </ol>
 <p><img src="/images/201807080006.png" border="0" class="" width="372" height="293"></p>
 <ol>
-<li>���岿��ͼ</li>
+<li>身体部分图</li>
 </ol>
-<p>����Ӧ������Ұͼ�����Ǻܶ����ݼ���û�����ѡ��ģ���Ҳ��������ƪ���ĵ�Ӧ�ó�������M(p) ��ʾ��λ��P�� Ҫ�ö��ٸ����ر�ʾ1�ס� һ���˵����ϽǺ����½������������£�</p>
+<p>本文应用了视野图（但是很多数据集是没有这个选项的，这也限制了这篇论文的应用场景）。M(p) 表示在位置P上 要用多少个像素表示1米。 一个人的左上角和右下角评估方法如下：</p>
 <p><img src="/images/201807080008.png" border="0" class="" width="372" height="293"></p>
-<p>�����ļ����˵ĸ�Լ2���ڣ���1���ڣ�������˼����Ϊʲô��ô���ã���Ȼ��ʵ��������</p>
+<p>该论文假设人的高约2米内，宽1米内（可以在思考下为什么这么设置，虽然是实验结果）。</p>
 <p><img src="/images/201807080009.png" border="0" class="" width="372" height="293"></p>
 <ol>
-<li>�ṹ���ܶ�ͼ</li>
+<li>结构化密度图</li>
 </ol>
-<p>�ṹ�ܶ�ͼ����ͬʱ�����ܶȷֲ������˵���״��������״����ܺ��˽���˵ƺ���Ҷ�����⣩��<br>�ṹ�����ܶ�ͼ��</p>
+<p>结构密度图用于同时捕获密度分布和行人的形状（行人形状这个很好了解决了灯和树叶等问题）。<br>结构化的密度图：</p>
 <p><img src="/images/201807080010.png" border="0" class="" width="372" height="293"></p>
 <ol>
-<li>��������Ⱥ�������</li>
+<li>多任务人群计数框架</li>
 </ol>
 <p><img src="/images/201807080012.png" border="0" class="" width="372" height="293"></p>
 
@@ -668,7 +668,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#���"><span class="nav-number">1.</span> <span class="nav-text">���</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#�����ջ�"><span class="nav-number">2.</span> <span class="nav-text">�����ջ�</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#�۵�����"><span class="nav-number">3.</span> <span class="nav-text">�۵�����</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#��ع���"><span class="nav-number">4.</span> <span class="nav-text">��ع���</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#����"><span class="nav-number">5.</span> <span class="nav-text">����</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#个人收获"><span class="nav-number">2.</span> <span class="nav-text">个人收获</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#观点引入"><span class="nav-number">3.</span> <span class="nav-text">观点引入</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#相关工作"><span class="nav-number">4.</span> <span class="nav-text">相关工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">5.</span> <span class="nav-text">方法</span></a></li></ol></div>
             
 
           </div>
