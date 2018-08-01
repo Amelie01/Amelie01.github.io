@@ -1,13 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[body structure aware deep crowd counting]]></title>
-    <url>%2F2018%2F07%2F07%2Fbody-structure-aware-deep-crowd-counting%2F</url>
-    <content type="text"><![CDATA[简介 论文名称：《Body Structure Aware Deep Crowd Counting》 CNN分类 基础CNN 上下文感知 多任务模型 输入数据的分类 基于完整图像 个人收获 通过引入人的具体形状来避免了树叶，还有灯灯对人群计数的混淆; 在没有perspective map的情况下手动标记一张，然后应用全部，这是论文选择数据集的一个标准； 观点引入影响人流统计的三个因素：行人、头、上下文信息（context structure）。2016 CVPR, 2017 CVPR 只考虑了行人因素（这个观点不能赞同，神经网络应该会自动提取上下文信息的），没有加入上下文信息。文中通过语义分割的观点来实现人流统计。两部分场景解析模型：第一部分为身体部分图，用来标记身体的部分，如图1，用不同的颜色标记出人的头，上身，和腿，文中接采用的是[2013 iccv Pedestrain parsing via deep decompositional network]提出的网络，及训练好的参数。第二部分为结构人群密度图。利用身体部分图产生的各个行人的详细形状，构建结构化的人群密度图。 本文采用多任务学习，具体分为以下三个任务：1，2如上描述的语义分割模型 3.评估人群数。 相关工作 人群计数 分为三类: 基于检测的,基于全局递归,基于密度评估的 行人语义分析 卷积神经网络 应用FCN 来实现场景解析模型。（去掉了后面的 全连接网络 改用conv2 1*1 ） 方法问题定义 身体部分图本文应用了视野图（但是很多数据集是没有这个选项的，这也限制了这篇论文的应用场景）。M(p) 表示在位置P上 要用多少个像素表示1米。 一个人的左上角和右下角评估方法如下： 该论文假设人的高约2米内，宽1米内（可以在思考下为什么这么设置，虽然是实验结果）。 结构化密度图结构密度图用于同时捕获密度分布和行人的形状（行人形状这个很好了解决了灯和树叶等问题）。结构化的密度图： 多任务人群计数框架]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[你好，世界]]></title>
-    <url>%2F2018%2F03%2F13%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[我的第一篇文章]]></content>
-  </entry>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[Learning to count objects in images]]></title>
+      <url>/2018/08/01/Learning%20To%20Count%20Objects%20in%20Images/</url>
+      <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul>
+<li>论文名称：《Learning to count objects in images》</li>
+<li>出处：NIPS 2010 </li>
+</ul>
+<h1 id="个人收获"><a href="#个人收获" class="headerlink" title="个人收获"></a>个人收获</h1><ul>
+<li>想通过本文了解问什么采用高斯核计数，但是还是没能理解其中的真谛哎</li>
+<li>提出了用高斯核生成真值。提出了一种距离计算方法，并将其转化为convex quadratic problem</li>
+</ul>
+<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>文中提出一种新的有监督学习的框架，用于视觉计数任务如显微镜下的细胞计数，监控下的人群计数。我们重点关注训练图片为标记为点的情况。（一个点代表一个实体）<br>目标是准确计数。论文没有采用监测和标记具体事例的方法。而是把问题转化为评估一个图像的密度图，通过对密度图积分（就是加和）即可得到整张图片的计数。学习推断这样的密度可以被制定为，正则化风险二次损失函数的最小化。文中引入一种新的损失函数来适配这种学习，与此同时可以用通过最大子数组问题（maximum subarray algorithm）的方式求解。然后可以把学习当作凸二次规划可解压缩平面优化。提议的框架非常灵活，因为它可以接受任何领域特定的可视化。一旦训练，我们的系统提供精确的对象计数而且特征提取上的时间开销也很少，使它特别适合需要处理实时数据或需要处理大量可视化数据的应用程序。</p>
+<p>#introduction<br>前面说的跟摘要类似，就是计数选的是人标记一个点，很符合人类的计数习惯并且省力。文中针对这种真值是标点的问题，提出相应的解决办法。并给出一些如何利用除了标点意外的信息。<br>问题定义：对于给定图片 I，给出一个密度函数F作为一个为途中的每一个像素计算真值的函数。<br>假设用xp每一个图像中的像素 p 的特征，密度函数可以认为是一个线性变换： xp: F(p) = wT xp. 对于给定的一组训练图片，参数向量 W 通过 the regularized risk framework学习获得, 所以 对训练图片的密度函数估计匹配通过人为标记密度真值(通过在W上的正则化) . （这段话没看懂哦）</p>
+<h1 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h1><ul>
+<li>检测，递归两种方法</li>
+</ul>
+<h1 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h1><p>真值密度函数可以看成一个基于给定点的 核密度评估。</p>
+<p><img src="/images/density.png" border="0" class="" width="372" height="293"></p>
+<p>具体的是根据文中标记为1的点，生成相应的高斯核，最后，累计图片中的数字，就是总的计数。文中用matlab 实现，filter 大小是15，方差为4。 一直不太明白这样做的具体意义是什么。特别是filter的大小 该如何选择。（留白吧，希望后面理解了回来补一下）<br>后面的算法是传统算 就不翻译了。</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[body structure aware deep crowd counting]]></title>
+      <url>/2018/07/07/body-structure-aware-deep-crowd-counting/</url>
+      <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul>
+<li>论文名称：《Body Structure Aware Deep Crowd Counting》</li>
+<li>CNN分类<ul>
+<li>基础CNN</li>
+<li>上下文感知</li>
+<li>多任务模型</li>
+</ul>
+</li>
+<li>输入数据的分类<ul>
+<li>基于完整图像</li>
+</ul>
+</li>
+</ul>
+<h1 id="个人收获"><a href="#个人收获" class="headerlink" title="个人收获"></a>个人收获</h1><ul>
+<li>通过引入人的具体形状来避免了树叶，还有灯灯对人群计数的混淆;</li>
+<li>在没有perspective map的情况下手动标记一张，然后应用全部，这是论文选择数据集的一个标准；</li>
+</ul>
+<h1 id="观点引入"><a href="#观点引入" class="headerlink" title="观点引入"></a>观点引入</h1><p>影响人流统计的三个因素：行人、头、上下文信息（context structure）。2016 CVPR, 2017 CVPR 只考虑了行人因素（这个观点不能赞同，神经网络应该会自动提取上下文信息的），没有加入上下文信息。文中通过语义分割的观点来实现人流统计。两部分场景解析模型：第一部分为身体部分图，用来标记身体的部分，如图1，用不同的颜色标记出人的头，上身，和腿，文中接采用的是[2013 iccv Pedestrain parsing via deep decompositional network]提出的网络，及训练好的参数。第二部分为结构人群密度图。利用身体部分图产生的各个行人的详细形状，构建结构化的人群密度图。</p>
+<p><img src="/images/201807072359.png" border="0" class="" width="372" height="293"></p>
+<p>本文采用多任务学习，具体分为以下三个任务：1，2如上描述的语义分割模型 3.评估人群数。</p>
+<h1 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h1><ul>
+<li>人群计数<ul>
+<li>分为三类: 基于检测的,基于全局递归,基于密度评估的</li>
+</ul>
+</li>
+<li>行人语义分析</li>
+<li>卷积神经网络<ul>
+<li>应用FCN 来实现场景解析模型。（去掉了后面的 全连接网络 改用conv2 1*1 ）</li>
+</ul>
+</li>
+</ul>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="问题定义"><a href="#问题定义" class="headerlink" title="问题定义"></a>问题定义</h2><p><img src="/images/201807080006.png" border="0" class="" width="372" height="293"></p>
+<h2 id="身体部分图"><a href="#身体部分图" class="headerlink" title="身体部分图"></a>身体部分图</h2><p>本文应用了视野图（但是很多数据集是没有这个选项的，这也限制了这篇论文的应用场景）。M(p) 表示在位置P上 要用多少个像素表示1米。 一个人的左上角和右下角评估方法如下：</p>
+<p><img src="/images/201807080008.png" border="0" class="" width="372" height="293"></p>
+<p>该论文假设人的高约2米内，宽1米内（可以在思考下为什么这么设置，虽然是实验结果）。</p>
+<p><img src="/images/201807080009.png" border="0" class="" width="372" height="293"></p>
+<h2 id="结构化密度图"><a href="#结构化密度图" class="headerlink" title="结构化密度图"></a>结构化密度图</h2><p>结构密度图用于同时捕获密度分布和行人的形状（行人形状这个很好了解决了灯和树叶等问题）。<br>结构化的密度图：</p>
+<p><img src="/images/201807080010.png" border="0" class="" width="372" height="293"></p>
+<h2 id="多任务人群计数框架"><a href="#多任务人群计数框架" class="headerlink" title="多任务人群计数框架"></a>多任务人群计数框架</h2><p><img src="/images/201807080012.png" border="0" class="" width="572" height="493"></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[你好，世界]]></title>
+      <url>/2018/03/13/hello-world/</url>
+      <content type="html"><![CDATA[<p>我的第一篇文章</p>
+]]></content>
+      
+        
+    </entry>
+    
+  
+  
 </search>
