@@ -79,13 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="MissDong&#39;s Logs">
-<meta property="og:url" content="http://dllog.cn/archives/2018/08/index.html">
+<meta name="description" content="简介 论文名称：《Dual path multi-scale fusion networks with attention for crowd counting》 CNN分类 基于attention   输入数据的分类 基于完整图像    个人收获 两个相同的网络，一个生成mask，通过attention去除背景，另外一个生成density map，最后两者想乘，得到最后的结果。解决的问题就是树，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SAFNet">
+<meta property="og:url" content="http://dllog.cn/2019/03/29/SAFNet/index.html">
 <meta property="og:site_name" content="MissDong&#39;s Logs">
+<meta property="og:description" content="简介 论文名称：《Dual path multi-scale fusion networks with attention for crowd counting》 CNN分类 基于attention   输入数据的分类 基于完整图像    个人收获 两个相同的网络，一个生成mask，通过attention去除背景，另外一个生成density map，最后两者想乘，得到最后的结果。解决的问题就是树，">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://dllog.cn/images/SFA/struc.jpg">
+<meta property="og:image" content="http://dllog.cn/images/SFA/loss.jpg">
+<meta property="og:updated_time" content="2019-03-29T08:01:06.678Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MissDong&#39;s Logs">
+<meta name="twitter:title" content="SAFNet">
+<meta name="twitter:description" content="简介 论文名称：《Dual path multi-scale fusion networks with attention for crowd counting》 CNN分类 基于attention   输入数据的分类 基于完整图像    个人收获 两个相同的网络，一个生成mask，通过attention去除背景，另外一个生成density map，最后两者想乘，得到最后的结果。解决的问题就是树，">
+<meta name="twitter:image" content="http://dllog.cn/images/SFA/struc.jpg">
 
 
 
@@ -115,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://dllog.cn/archives/2018/08/"/>
+  <link rel="canonical" href="http://dllog.cn/2019/03/29/SAFNet/"/>
 
 
 
 
 
-  <title>归档 | MissDong's Logs</title>
+  <title>SAFNet | MissDong's Logs</title>
   
 
 
@@ -150,7 +157,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -288,74 +295,218 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dllog.cn/2019/03/29/SAFNet/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DL">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Penguins.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MissDong's Logs">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/08/01/Learning To Count Objects in Images/" itemprop="url">
-              
-                <span itemprop="name">Learning to count objects in images</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">SAFNet</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-01T16:49:34+08:00"
-              content="2018-08-01" >
-          08-01
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-29T16:00:19+08:00">
+                2019-03-29
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/03/29/SAFNet/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/03/29/SAFNet/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul>
+<li>论文名称：《Dual path multi-scale fusion networks with attention for crowd counting》</li>
+<li>CNN分类<ul>
+<li>基于attention</li>
+</ul>
+</li>
+<li>输入数据的分类<ul>
+<li>基于完整图像</li>
+</ul>
+</li>
+</ul>
+<h1 id="个人收获"><a href="#个人收获" class="headerlink" title="个人收获"></a>个人收获</h1><ul>
+<li>两个相同的网络，一个生成mask，通过attention去除背景，另外一个生成density map，最后两者想乘，得到最后的结果。<br>解决的问题就是树，灯等背景会被识别成人</li>
+</ul>
+<h1 id="观点引入"><a href="#观点引入" class="headerlink" title="观点引入"></a>观点引入</h1><p>Problem:<br>Estimation crowd density map. Existing two major difficult problems: large head scale variations caused by camera perspective and diverse crowd distributions with high background noisy scenes.<br>Goal:<br>To further tackle the high background noise issue, we adopt another path of multi-scale feature fusion as attention map path (AMP) with the same structure to learn a probability map that indicates high probability head regions. Then this attention map is used to suppress non-head regions in the last feature maps of DMP, which makes DMP focus on learning the regression task only in high probability head regions. We also introduce a multi-task loss by adding a attention map loss for AMP, which improves the network performance with more explicit supervised signal.(最后一句没看懂，前面的意思是通过一个同样的网络attentionnet来识别出高概率是人头的地图，然后利用这个高概率的人头地图在网络的最后一层去掉那些没有人头的地方的干扰)<br>思想总结：用att提取出了高概率的人头区域，然后让网络关注人头区域多的位置。多尺度，结合了层次不同但是分辨率相同的feature。</p>
+<h1 id="网络结构"><a href="#网络结构" class="headerlink" title="网络结构"></a>网络结构</h1><p><img src="/images/SFA/struc.jpg" border="0" class="" width="372" height="293"></p>
+<h2 id="Feature-map-extractor-FME"><a href="#Feature-map-extractor-FME" class="headerlink" title="Feature map extractor(FME)"></a>Feature map extractor(FME)</h2><p>We choose a pre-trained VGG16 with batch normalization as the frond3 end feature map extractor due to its strong feature represent ability and easily to be concatenated by the back-end dual path networks. The first 13 layers from conv1-1 to conv5- 3 are involved to output feature maps with sizes 1/2, 1/4, 1/8 and 1/16 of the original input size. Four source layers, conv2-2, conv3-3, conv4-3 and conv5-3, which represent multi-scale features and multi-level semantic information, will be concatenated by both DMP and AMP</p>
+<h2 id="Density-map-path-DMP"><a href="#Density-map-path-DMP" class="headerlink" title="Density map path(DMP)"></a>Density map path(DMP)</h2><p>The DMP of SFANet is constructed in feature pyramid structure as illustrated in Fig.2. Conv5-3 feature maps firstly is upsampled by factor 2, and then concatenate feature maps of conv4-3. The detail of transfer connection block T is shown as Fig.3, which contains concat, conv1×1×256, conv3×3×256 and upsample sub-layers. The second T block has the similar structure concatenating conv3-3 with only different channel size 128, that is concat, conv1×1×128, conv3×3×128 and upsample. Then concatenated outputs of second T block and conv2-2 are feed into header block H with concat, conv1×1×64, conv3×3×64 and conv3×3×32 shown as Fig.3. Every 1 × 1 convolution before the 3 × 3 is used to reduce the computational complexity. Due to previous three upsample layers, we can retrieve the final high resolution feature maps with 1/2 size of the original input. Then element-wise multiple is applied on attention map and the last density feature maps to generate refined density feature maps Fref ine as equation 1: Fref ine = fden ⊗ MAtt (1) where fden is the last density features, MAtt is attention map, ⊗ denotes element-wise multiply. Before this operation, MAtt is expanded as the same channel as fden. At last, we use a simple convolution with kernel 1×1×1 to generate the high-quality density map Mden. Batch normalization is applied after every convolutional layer because we find that batch training and batch normalization can stabilize the training process and accelerate loss convergence. We also apply Relu after every convolutional layer except the last one.</p>
+<h2 id="Attention-map-path-AMP"><a href="#Attention-map-path-AMP" class="headerlink" title="Attention map path(AMP)"></a>Attention map path(AMP)</h2><p>The AMP of SFANet has the similar structure with DMP, and output probability map to indicate head probability in each pixel of the density feature map. In this work, we introduce the attention model as follows. Suppose convolutional features output by head block as fatt, the attention map MAtt is generated as: MAtt = Sigmoid(W c fatt + b) (2) where W, b is the 1 × 1 × 1 convolution layer weights and bias, c denotes the convolution operation and Sigmoid denotes the sigmoid activation function. The sigmoid activation function gives out (0, 1) probability scores to make network discriminate head location and background. The visualization of Matt can be seen in Fig.4. The proposed attention map loss will be further discussed the next section.</p>
+<h2 id="loss"><a href="#loss" class="headerlink" title="loss"></a>loss</h2><p><img src="/images/SFA/loss.jpg" border="0" class="" width="372" height="293"></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果您觉得有用的话</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="DL 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    DL
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://dllog.cn/2019/03/29/SAFNet/" title="SAFNet">http://dllog.cn/2019/03/29/SAFNet/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/01/Learning To Count Objects in Images/" rel="next" title="Learning to count objects in images">
+                <i class="fa fa-chevron-left"></i> Learning to count objects in images
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -363,6 +514,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -383,8 +548,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -446,6 +620,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#个人收获"><span class="nav-number">2.</span> <span class="nav-text">个人收获</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#观点引入"><span class="nav-number">3.</span> <span class="nav-text">观点引入</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网络结构"><span class="nav-number">4.</span> <span class="nav-text">网络结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Feature-map-extractor-FME"><span class="nav-number">4.1.</span> <span class="nav-text">Feature map extractor(FME)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Density-map-path-DMP"><span class="nav-number">4.2.</span> <span class="nav-text">Density map path(DMP)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Attention-map-path-AMP"><span class="nav-number">4.3.</span> <span class="nav-text">Attention map path(AMP)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#loss"><span class="nav-number">4.4.</span> <span class="nav-text">loss</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -601,6 +791,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -618,6 +812,18 @@
       <script id="dsq-count-scr" src="https://dllog.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://dllog.cn/2019/03/29/SAFNet/';
+          this.page.identifier = '2019/03/29/SAFNet/';
+          this.page.title = 'SAFNet';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://dllog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
